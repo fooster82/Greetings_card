@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greetings Cards</title>
+    <link rel="stylesheet" href="style.css">
     <script defer src="index.js"></script>
 </head>
 <header>
@@ -13,19 +14,24 @@
 <body>
     <main>
         <form id="greetingscard">
-            <input class="data" type="text" placeholder = "Enter Your Name" id="name">
+            <label for="name">Name</label>
+            <input class="data" type="text" placeholder = "Enter Your Name" id="name"><br><br><br>
+            <label for="events">Select your event</label>
             <select class="data" name="events" id="events">
                 <option value ="wedding">Wedding</option>
                 <option value ="funeral">Funeral</option>
                 <option value ="birthday">Birthday</option>
                 <option value ="babyshower">Baby Shower</option>
-             </select>
-            <input class="data" type="text" placeholder = "Enter Greeting" id="greeting">
-            <input class="data" type="text" placeholder = "Enter Message" id="message">
+             </select><br><br><br>
+             <label for="greeting">Greeting</label>
+            <input class="data" type="text" placeholder = "Enter Greeting" id="greeting"><br><br><br>
+            <label for="message">Message</label>
+            <input class="data" type="text" placeholder = "Enter Message" id="message"><br><br><br>
             <input type="submit" value="Submit" action="/card.html" target="/card.html">
         </form>
 
-        <p class="cardtext"></p>
+        <p></p> 
+        <footer></footer>   
     </main>
 </body>
 </html>
