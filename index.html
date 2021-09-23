@@ -12,6 +12,25 @@
 </header>
 <body>
     <main>
+        <form id="greetingscard">
+            <input class="data" type="text" placeholder = "Enter Your Name" id="name">
+            <select class="data" name="events" id="events">
+                <option value ="wedding">Wedding</option>
+                <option value ="funeral">Funeral</option>
+                <option value ="birthday">Birthday</option>
+                <option value ="babyshower">Baby Shower</option>
+             </select>
+            <input class="data" type="text" placeholder = "Enter Greeting" id="greeting">
+            <input class="data" type="text" placeholder = "Enter Message" id="message">
+            <input type="submit" value="Submit" action="/card.html" target="/card.html">
+        </form>
+
+        <p class="cardtext"></p>
+    </main>
+</body>
+</html>
+
+=======
         <form id="greetingscard" action="./card.html">
             <input type="text" placeholder = "Enter Greeting" id="greeting">
             <select name="events" id="events">
