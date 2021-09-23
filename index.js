@@ -1,9 +1,12 @@
 const form = document.querySelector('form');
 const p = document.querySelector('p');
 const h1 = document.querySelector('h1');
+const footer = document.querySelector('footer');
 
 let card = (name, event, greeting, message) => {
-    p.innerHTML = `${greeting}, <br>You are invited to ${name}'s ${event}.  <br>${message} <br>Hope you can make it! <br><br><br>(Refresh the page for a new card)`
+    p.style.border = '5px dotted green'
+    p.innerHTML = `${greeting}, <br>You are invited to ${name}'s ${event}.  <br>${message} <br>Hope you can make it!`
+    footer.innerHTML = '(Refresh the page for a new card)'
 }
 
 form.addEventListener('submit', e => {
@@ -23,6 +26,7 @@ form.addEventListener('submit', e => {
         let cardCall = card(name, event, greeting, message)
         res(cardCall)
         } else {
+        h1.setAttribute("style", "text-align: center; background-color: red")
         h1.textContent = "Missing input, please reload and fill all fields"
         rej("no valid input")
         }
